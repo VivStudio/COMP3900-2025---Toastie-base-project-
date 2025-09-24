@@ -37,4 +37,5 @@ di/ – dependency injection setup (e.g., service locator, providers).
 # Custom component library notes
 - Re-use custom component where possible. Ok to refactor. Can make new components
 - Use provided colors only with the exception of Colors.white 
-- Use provided font styling only. Choose the one closest to the Figma mocks if the exact size is missing. 
+- Use provided font styling only. Choose the one closest to the Figma mocks if the exact size is missing.
+- Any padding or border radius is usually already defined. Make sure everything is in multiples of gridbaseline 
