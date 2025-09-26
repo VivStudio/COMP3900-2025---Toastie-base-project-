@@ -1,0 +1,19 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+DiagnosisEntity _$DiagnosisEntityFromJson(Map<String, dynamic> json) =>
+    DiagnosisEntity(
+      user_id: json['user_id'] as String?,
+      diagnosis_id: (json['diagnosis_id'] as num?)?.toInt(),
+      date: (json['date'] as num?)?.toInt(),
+      diagnosis: json['diagnosis'] as String?,
+    );
+
+Map<String, dynamic> _$DiagnosisEntityToJson(DiagnosisEntity instance) =>
+    <String, dynamic>{
+      if (instance.user_id case final value?) 'user_id': value,
+      if (instance.diagnosis_id case final value?) 'diagnosis_id': value,
+      if (instance.date case final value?) 'date': value,
+      if (instance.diagnosis case final value?) 'diagnosis': value,
+    };

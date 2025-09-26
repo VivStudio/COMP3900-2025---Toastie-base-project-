@@ -1,0 +1,1 @@
+ /Users/viv/Desktop/Toastie/Toastie/client/.dart_tool/flutter_build/4acd7e5830ca1446d95a6bc7313726a6/native_assets.json: 

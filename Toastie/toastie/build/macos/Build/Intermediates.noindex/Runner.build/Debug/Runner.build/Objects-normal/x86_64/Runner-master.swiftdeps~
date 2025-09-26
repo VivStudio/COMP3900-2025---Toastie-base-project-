@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)"
+options: "9a1a92567da5ba281853eeb8aa848932366c22d4c906cd6a3183548b7eafb970"
+build_start_time: [1690425546, 257354974]
+build_end_time: [1690425557, 461113929]
+inputs:
+  "/Users/vivian/Desktop/Toastie/Toastie/toastie/macos/Flutter/GeneratedPluginRegistrant.swift": [1690425493, 187997817]
+  "/Users/vivian/Desktop/Toastie/Toastie/toastie/macos/Runner/AppDelegate.swift": [1690374491, 358524799]
+  "/Users/vivian/Desktop/Toastie/Toastie/toastie/macos/Runner/MainFlutterWindow.swift": [1690374491, 364294052]

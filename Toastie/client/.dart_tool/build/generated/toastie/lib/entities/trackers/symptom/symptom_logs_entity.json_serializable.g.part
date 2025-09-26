@@ -1,0 +1,43 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+SymptomDetails _$SymptomDetailsFromJson(Map<String, dynamic> json) =>
+    SymptomDetails(
+      name: json['name'] as String,
+      symptom_id: (json['symptom_id'] as num?)?.toInt() ?? null,
+    );
+
+Map<String, dynamic> _$SymptomDetailsToJson(SymptomDetails instance) =>
+    <String, dynamic>{
+      'symptom_id': instance.symptom_id,
+      'name': instance.name,
+    };
+
+SymptomLogsEntity _$SymptomLogsEntityFromJson(Map<String, dynamic> json) =>
+    SymptomLogsEntity(
+      user_id: json['user_id'] as String?,
+      log_id: (json['log_id'] as num?)?.toInt(),
+      date_time: (json['date_time'] as num?)?.toInt(),
+      details: json['details'] == null
+          ? null
+          : SymptomDetails.fromJson(json['details'] as Map<String, dynamic>),
+      severity: $enumDecodeNullable(_$SymptomSeverityEnumMap, json['severity']),
+    );
+
+Map<String, dynamic> _$SymptomLogsEntityToJson(SymptomLogsEntity instance) =>
+    <String, dynamic>{
+      if (instance.user_id case final value?) 'user_id': value,
+      if (instance.log_id case final value?) 'log_id': value,
+      if (instance.date_time case final value?) 'date_time': value,
+      if (instance.details case final value?) 'details': value,
+      if (_$SymptomSeverityEnumMap[instance.severity] case final value?)
+        'severity': value,
+    };
+
+const _$SymptomSeverityEnumMap = {
+  SymptomSeverity.mild: 'mild',
+  SymptomSeverity.moderate: 'moderate',
+  SymptomSeverity.severe: 'severe',
+  SymptomSeverity.unbearable: 'unbearable',
+};

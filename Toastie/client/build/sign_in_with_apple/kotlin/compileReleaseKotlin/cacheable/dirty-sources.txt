@@ -1,0 +1,1 @@
+/Users/viv/.pub-cache/hosted/pub.dev/sign_in_with_apple-5.0.0/android/src/main/kotlin/com/aboutyou/dart_packages/sign_in_with_apple/SignInWithApplePlugin.kt

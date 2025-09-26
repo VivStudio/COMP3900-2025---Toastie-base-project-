@@ -1,0 +1,33 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+TimelineEntity _$TimelineEntityFromJson(Map<String, dynamic> json) =>
+    TimelineEntity(
+      id: (json['id'] as num?)?.toInt(),
+      user_id: json['user_id'] as String?,
+      date_time: (json['date_time'] as num?)?.toInt(),
+      category: $enumDecodeNullable(_$CategoryEnumMap, json['category']),
+      log_id: (json['log_id'] as num?)?.toInt(),
+    );
+
+Map<String, dynamic> _$TimelineEntityToJson(TimelineEntity instance) =>
+    <String, dynamic>{
+      if (instance.id case final value?) 'id': value,
+      if (instance.user_id case final value?) 'user_id': value,
+      if (instance.date_time case final value?) 'date_time': value,
+      if (_$CategoryEnumMap[instance.category] case final value?)
+        'category': value,
+      if (instance.log_id case final value?) 'log_id': value,
+    };
+
+const _$CategoryEnumMap = {
+  Category.symptom: 'symptom',
+  Category.medication: 'medication',
+  Category.meal: 'meal',
+  Category.stool: 'stool',
+  Category.period: 'period',
+  Category.note: 'note',
+  Category.weight: 'weight',
+  Category.labReport: 'labReport',
+};

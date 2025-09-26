@@ -1,0 +1,5 @@
+services/target/**
+client/lib/services/test_account.dart
+.env
+client/venv/
+client/android/key.properties

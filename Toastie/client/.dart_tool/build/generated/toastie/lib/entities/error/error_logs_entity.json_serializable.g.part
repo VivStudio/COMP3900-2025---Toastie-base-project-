@@ -1,0 +1,37 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+ErrorLogsEntity _$ErrorLogsEntityFromJson(Map<String, dynamic> json) =>
+    ErrorLogsEntity(
+      user_id: json['user_id'] as String?,
+      log_id: (json['log_id'] as num?)?.toInt(),
+      date_time: (json['date_time'] as num?)?.toInt(),
+      page_name: $enumDecodeNullable(_$PageNameEnumMap, json['page_name']),
+      error_message: json['error_message'] as String?,
+    );
+
+Map<String, dynamic> _$ErrorLogsEntityToJson(ErrorLogsEntity instance) =>
+    <String, dynamic>{
+      if (instance.user_id case final value?) 'user_id': value,
+      if (instance.log_id case final value?) 'log_id': value,
+      if (instance.date_time case final value?) 'date_time': value,
+      if (_$PageNameEnumMap[instance.page_name] case final value?)
+        'page_name': value,
+      if (instance.error_message case final value?) 'error_message': value,
+    };
+
+const _$PageNameEnumMap = {
+  PageName.authentication: 'authentication',
+  PageName.home: 'home',
+  PageName.magic: 'magic',
+  PageName.symptoms: 'symptoms',
+  PageName.medication: 'medication',
+  PageName.food: 'food',
+  PageName.stool: 'stool',
+  PageName.period: 'period',
+  PageName.weight: 'weight',
+  PageName.notes: 'notes',
+  PageName.insights: 'insights',
+  PageName.subscription: 'subscription',
+};

@@ -1,0 +1,312 @@
+[
+  {
+    "Name": "Acetaminophen",
+    "Dose": "500mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Albuterol",
+    "Dose": "2.5mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Amlodipine",
+    "Dose": "5mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Amantadine",
+    "Dose": "100mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Amoxicillin",
+    "Dose": "250mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Alprazolam",
+    "Dose": "0.5mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Aspirin",
+    "Dose": "81mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Atorvastatin",
+    "Dose": "10mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Azithromycin",
+    "Dose": "250mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Benazepril",
+    "Dose": "20mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Budesonide",
+    "Dose": "3mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Carvedilol",
+    "Dose": "12.5mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Cetirizine",
+    "Dose": "10mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Cephalexin",
+    "Dose": "500mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Ciprofloxacin",
+    "Dose": "500mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Citalopram",
+    "Dose": "20mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Clindamycin",
+    "Dose": "300mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Clonazepam",
+    "Dose": "1mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Clopidogrel",
+    "Dose": "75mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Diazepam",
+    "Dose": "5mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Diphenhydramine",
+    "Dose": "25mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Doxycycline",
+    "Dose": "100mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Duloxetine",
+    "Dose": "30mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Escitalopram",
+    "Dose": "10mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Famciclovir",
+    "Dose": "500mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Fluoxetine",
+    "Dose": "20mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Fluticasone",
+    "Dose": "50mcg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Formoterol",
+    "Dose": "12mcg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Furosemide",
+    "Dose": "20mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Gabapentin",
+    "Dose": "300mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Hydrochlorothiazide",
+    "Dose": "25mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Ibuprofen",
+    "Dose": "200mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Insulin Aspart",
+    "Dose": "100 units/mL",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Insulin Glargine",
+    "Dose": "100 units/mL",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Levofloxacin",
+    "Dose": "500mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Levothyroxine",
+    "Dose": "100mcg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Lisinopril",
+    "Dose": "10mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Lorazepam",
+    "Dose": "1mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Loratadine",
+    "Dose": "10mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Metformin",
+    "Dose": "500mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Metoprolol",
+    "Dose": "50mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Metronidazole",
+    "Dose": "500mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Mometasone",
+    "Dose": "50mcg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Montelukast",
+    "Dose": "10mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Naproxen",
+    "Dose": "500mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Omeprazole",
+    "Dose": "20mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Oseltamivir",
+    "Dose": "75mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Pantoprazole",
+    "Dose": "40mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Paracetamol",
+    "Dose": "500mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Paroxetine",
+    "Dose": "20mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Prednisone",
+    "Dose": "10mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Pregabalin",
+    "Dose": "75mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Salmeterol",
+    "Dose": "25mcg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Sertraline",
+    "Dose": "50mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Spironolactone",
+    "Dose": "25mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Sulfamethoxazole",
+    "Dose": "800mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Trazodone",
+    "Dose": "50mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Trimethoprim",
+    "Dose": "160mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Valacyclovir",
+    "Dose": "500mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Venlafaxine",
+    "Dose": "75mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Warfarin",
+    "Dose": "5mg",
+    "Quantity": "1"
+  },
+  {
+    "Name": "Zolpidem",
+    "Dose": "10mg",
+    "Quantity": "1"
+  }
+]

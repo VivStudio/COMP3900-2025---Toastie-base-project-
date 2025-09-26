@@ -1,0 +1,38 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+MedicationScheduleEntity _$MedicationScheduleEntityFromJson(
+        Map<String, dynamic> json) =>
+    MedicationScheduleEntity(
+      id: (json['id'] as num?)?.toInt(),
+      user_id: json['user_id'] as String?,
+      name: json['name'] as String?,
+      quantity: (json['quantity'] as num?)?.toDouble(),
+      dose: json['dose'] as String?,
+      notification_title: json['notification_title'] as String?,
+      notification_body: json['notification_body'] as String?,
+      rrule: json['rrule'] as String?,
+      is_active: json['is_active'] as bool?,
+      local_ids: (json['local_ids'] as List<dynamic>?)
+              ?.map((e) => (e as num).toInt())
+              .toList() ??
+          const [],
+    );
+
+Map<String, dynamic> _$MedicationScheduleEntityToJson(
+        MedicationScheduleEntity instance) =>
+    <String, dynamic>{
+      if (instance.id case final value?) 'id': value,
+      if (instance.user_id case final value?) 'user_id': value,
+      if (instance.name case final value?) 'name': value,
+      if (instance.quantity case final value?) 'quantity': value,
+      if (instance.dose case final value?) 'dose': value,
+      if (instance.notification_title case final value?)
+        'notification_title': value,
+      if (instance.notification_body case final value?)
+        'notification_body': value,
+      if (instance.rrule case final value?) 'rrule': value,
+      if (instance.is_active case final value?) 'is_active': value,
+      'local_ids': instance.local_ids,
+    };

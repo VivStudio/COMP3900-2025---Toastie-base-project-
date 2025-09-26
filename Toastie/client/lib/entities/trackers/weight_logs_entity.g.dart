@@ -1,0 +1,23 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'weight_logs_entity.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+WeightLogsEntity _$WeightLogsEntityFromJson(Map<String, dynamic> json) =>
+    WeightLogsEntity(
+      user_id: json['user_id'] as String?,
+      log_id: (json['log_id'] as num?)?.toInt(),
+      date_time: (json['date_time'] as num?)?.toInt(),
+      weight: (json['weight'] as num?)?.toDouble(),
+    );
+
+Map<String, dynamic> _$WeightLogsEntityToJson(WeightLogsEntity instance) =>
+    <String, dynamic>{
+      if (instance.user_id case final value?) 'user_id': value,
+      if (instance.log_id case final value?) 'log_id': value,
+      if (instance.date_time case final value?) 'date_time': value,
+      if (instance.weight case final value?) 'weight': value,
+    };

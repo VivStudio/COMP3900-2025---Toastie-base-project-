@@ -1,0 +1,27 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+FeedbackEntity _$FeedbackEntityFromJson(Map<String, dynamic> json) =>
+    FeedbackEntity(
+      id: (json['id'] as num?)?.toInt(),
+      date_time: (json['date_time'] as num?)?.toInt(),
+      type: $enumDecodeNullable(_$FeedbackTypeEnumMap, json['type']),
+      details: json['details'] as String?,
+      contact: json['contact'] as String?,
+    );
+
+Map<String, dynamic> _$FeedbackEntityToJson(FeedbackEntity instance) =>
+    <String, dynamic>{
+      if (instance.id case final value?) 'id': value,
+      if (instance.date_time case final value?) 'date_time': value,
+      if (_$FeedbackTypeEnumMap[instance.type] case final value?) 'type': value,
+      if (instance.details case final value?) 'details': value,
+      if (instance.contact case final value?) 'contact': value,
+    };
+
+const _$FeedbackTypeEnumMap = {
+  FeedbackType.bug: 'bug',
+  FeedbackType.featureRequest: 'featureRequest',
+  FeedbackType.general: 'general',
+};

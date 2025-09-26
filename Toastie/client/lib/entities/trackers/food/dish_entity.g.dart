@@ -1,0 +1,28 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'dish_entity.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+DishEntity _$DishEntityFromJson(Map<String, dynamic> json) => DishEntity(
+      user_id: json['user_id'] as String?,
+      log_id: (json['log_id'] as num?)?.toInt(),
+      date_time: (json['date_time'] as num?)?.toInt(),
+      name: json['name'] as String?,
+      summary: json['summary'] as String?,
+      ingredient_ids: (json['ingredient_ids'] as List<dynamic>?)
+          ?.map((e) => (e as num).toInt())
+          .toList(),
+    );
+
+Map<String, dynamic> _$DishEntityToJson(DishEntity instance) =>
+    <String, dynamic>{
+      if (instance.user_id case final value?) 'user_id': value,
+      if (instance.log_id case final value?) 'log_id': value,
+      if (instance.date_time case final value?) 'date_time': value,
+      if (instance.name case final value?) 'name': value,
+      if (instance.summary case final value?) 'summary': value,
+      if (instance.ingredient_ids case final value?) 'ingredient_ids': value,
+    };

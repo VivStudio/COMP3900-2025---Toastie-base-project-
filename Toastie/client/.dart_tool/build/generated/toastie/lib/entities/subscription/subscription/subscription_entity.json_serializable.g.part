@@ -1,0 +1,33 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+SubscriptionEntity _$SubscriptionEntityFromJson(Map<String, dynamic> json) =>
+    SubscriptionEntity(
+      id: (json['id'] as num?)?.toInt(),
+      user_id: json['user_id'] as String?,
+      plan_id: (json['plan_id'] as num?)?.toInt(),
+      start_date_time: (json['start_date_time'] as num?)?.toInt(),
+      end_date_time: (json['end_date_time'] as num?)?.toInt(),
+      transaction_id: json['transaction_id'] as String?,
+      purchase_id: json['purchase_id'] as String?,
+      product_id: json['product_id'] as String?,
+      verification_data_source: json['verification_data_source'] as String?,
+      verification_data_server: json['verification_data_server'] as String?,
+    );
+
+Map<String, dynamic> _$SubscriptionEntityToJson(SubscriptionEntity instance) =>
+    <String, dynamic>{
+      if (instance.id case final value?) 'id': value,
+      if (instance.user_id case final value?) 'user_id': value,
+      if (instance.plan_id case final value?) 'plan_id': value,
+      if (instance.start_date_time case final value?) 'start_date_time': value,
+      if (instance.end_date_time case final value?) 'end_date_time': value,
+      if (instance.transaction_id case final value?) 'transaction_id': value,
+      if (instance.purchase_id case final value?) 'purchase_id': value,
+      if (instance.product_id case final value?) 'product_id': value,
+      if (instance.verification_data_source case final value?)
+        'verification_data_source': value,
+      if (instance.verification_data_server case final value?)
+        'verification_data_server': value,
+    };

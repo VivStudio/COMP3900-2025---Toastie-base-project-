@@ -1,0 +1,37 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+SubscriptionPlansEntity _$SubscriptionPlansEntityFromJson(
+        Map<String, dynamic> json) =>
+    SubscriptionPlansEntity(
+      id: (json['id'] as num?)?.toInt(),
+      tier: $enumDecodeNullable(_$SubscriptionTierEnumMap, json['tier']),
+      period: $enumDecodeNullable(_$SubscriptionPeriodEnumMap, json['period']),
+      internal_price: (json['internal_price'] as num?)?.toDouble(),
+      is_active: json['is_active'] as bool?,
+      key: json['key'] as String?,
+    );
+
+Map<String, dynamic> _$SubscriptionPlansEntityToJson(
+        SubscriptionPlansEntity instance) =>
+    <String, dynamic>{
+      if (instance.id case final value?) 'id': value,
+      if (_$SubscriptionTierEnumMap[instance.tier] case final value?)
+        'tier': value,
+      if (_$SubscriptionPeriodEnumMap[instance.period] case final value?)
+        'period': value,
+      if (instance.internal_price case final value?) 'internal_price': value,
+      if (instance.is_active case final value?) 'is_active': value,
+      if (instance.key case final value?) 'key': value,
+    };
+
+const _$SubscriptionTierEnumMap = {
+  SubscriptionTier.free: 'free',
+  SubscriptionTier.pro: 'pro',
+};
+
+const _$SubscriptionPeriodEnumMap = {
+  SubscriptionPeriod.monthly: 'monthly',
+  SubscriptionPeriod.yearly: 'yearly',
+};

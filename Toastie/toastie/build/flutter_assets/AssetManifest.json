@@ -1,0 +1,41 @@
+{
+  "assets/defaultProfilePicture.png": [
+    "assets/defaultProfilePicture.png"
+  ],
+  "assets/example.jpg": [
+    "assets/example.jpg"
+  ],
+  "assets/logo.png": [
+    "assets/logo.png"
+  ],
+  "assets/track.png": [
+    "assets/track.png"
+  ],
+  "fonts/Kollektif-Bold.ttf": [
+    "fonts/Kollektif-Bold.ttf"
+  ],
+  "fonts/Kollektif.ttf": [
+    "fonts/Kollektif.ttf"
+  ],
+  "fonts/TTNorms-Bold.otf": [
+    "fonts/TTNorms-Bold.otf"
+  ],
+  "fonts/TTNorms-Heavy.otf": [
+    "fonts/TTNorms-Heavy.otf"
+  ],
+  "fonts/TTNorms-Light.otf": [
+    "fonts/TTNorms-Light.otf"
+  ],
+  "fonts/TTNorms-Medium.otf": [
+    "fonts/TTNorms-Medium.otf"
+  ],
+  "fonts/TTNorms-Regular.otf": [
+    "fonts/TTNorms-Regular.otf"
+  ],
+  "fonts/TTNorms-Thin.otf": [
+    "fonts/TTNorms-Thin.otf"
+  ],
+  "packages/cupertino_icons/assets/CupertinoIcons.ttf": [
+    "packages/cupertino_icons/assets/CupertinoIcons.ttf"
+  ]
+}

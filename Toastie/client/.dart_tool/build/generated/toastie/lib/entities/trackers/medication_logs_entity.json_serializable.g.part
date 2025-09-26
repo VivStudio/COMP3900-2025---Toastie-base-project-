@@ -1,0 +1,27 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+MedicationLogsEntity _$MedicationLogsEntityFromJson(
+        Map<String, dynamic> json) =>
+    MedicationLogsEntity(
+      user_id: json['user_id'] as String?,
+      log_id: (json['log_id'] as num?)?.toInt(),
+      date_time: (json['date_time'] as num?)?.toInt(),
+      name: json['name'] as String?,
+      dose: json['dose'] as String?,
+      quantity: (json['quantity'] as num?)?.toDouble(),
+      schedule_id: (json['schedule_id'] as num?)?.toInt(),
+    );
+
+Map<String, dynamic> _$MedicationLogsEntityToJson(
+        MedicationLogsEntity instance) =>
+    <String, dynamic>{
+      if (instance.user_id case final value?) 'user_id': value,
+      if (instance.log_id case final value?) 'log_id': value,
+      if (instance.date_time case final value?) 'date_time': value,
+      if (instance.name case final value?) 'name': value,
+      if (instance.dose case final value?) 'dose': value,
+      if (instance.quantity case final value?) 'quantity': value,
+      if (instance.schedule_id case final value?) 'schedule_id': value,
+    };

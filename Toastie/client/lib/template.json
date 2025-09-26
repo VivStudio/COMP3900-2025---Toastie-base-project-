@@ -1,0 +1,37 @@
+{
+  "Stool" : [
+    {
+      "Type": ["Type 1: Separate hard lumps, like nuts (difficult to pass)", "Type 2: Sausage-shaped, but lumpy", "Type 3: Like a sausage but with cracks on its surface", "Type 4: Like a sausage or snake, smooth and soft (average stool)", "Type 5: Soft blobs with clear cut edges", "Type 6: Fluffy pieces with ragged edges, a mushy stool (diarrhea)", "Type 7: Watery, no solid pieces, entirely liquid (diarrhea)"],
+      "Time": "7:00AM",
+      "Symptoms": ["Blood", "Mucus"]
+    }
+  ],
+  "Symptom": [
+    {
+      "Type": "Headache",
+      "Time": "7:00AM",
+      "Severity": "Moderate"
+    }
+  ],
+  "Medication": [
+    {
+      "Type": "Mesalazine",
+      "Time": "7:00AM",
+      "Dose": 4,
+      "Dosage": "500mg"
+    }
+  ],
+  "Food": [
+    {
+      "Type": "Breakfast",
+      "Time": "7:00AM",
+      "Ingredients": ["Dumplings", "Apple"]
+    }
+  ],
+  "Period" : [
+    {
+      "Flow": "Medium",
+      "Symptoms": ["Fatigue", "Acne"]
+    }
+  ]
+}

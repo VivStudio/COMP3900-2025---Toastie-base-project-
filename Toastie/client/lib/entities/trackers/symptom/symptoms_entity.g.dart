@@ -1,0 +1,22 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'symptoms_entity.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+SymptomsEntity _$SymptomsEntityFromJson(Map<String, dynamic> json) =>
+    SymptomsEntity(
+      id: (json['id'] as num?)?.toInt(),
+      name: json['name'] as String?,
+      aliases:
+          (json['aliases'] as List<dynamic>?)?.map((e) => e as String).toList(),
+    );
+
+Map<String, dynamic> _$SymptomsEntityToJson(SymptomsEntity instance) =>
+    <String, dynamic>{
+      if (instance.id case final value?) 'id': value,
+      if (instance.name case final value?) 'name': value,
+      if (instance.aliases case final value?) 'aliases': value,
+    };

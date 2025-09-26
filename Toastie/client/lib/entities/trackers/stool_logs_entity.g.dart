@@ -1,0 +1,34 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'stool_logs_entity.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+StoolLogsEntity _$StoolLogsEntityFromJson(Map<String, dynamic> json) =>
+    StoolLogsEntity(
+      user_id: json['user_id'] as String?,
+      log_id: (json['log_id'] as num?)?.toInt(),
+      date_time: (json['date_time'] as num?)?.toInt(),
+      severity: $enumDecodeNullable(_$BristolScaleEnumMap, json['severity']),
+    );
+
+Map<String, dynamic> _$StoolLogsEntityToJson(StoolLogsEntity instance) =>
+    <String, dynamic>{
+      if (instance.user_id case final value?) 'user_id': value,
+      if (instance.log_id case final value?) 'log_id': value,
+      if (instance.date_time case final value?) 'date_time': value,
+      if (_$BristolScaleEnumMap[instance.severity] case final value?)
+        'severity': value,
+    };
+
+const _$BristolScaleEnumMap = {
+  BristolScale.type1: 'type1',
+  BristolScale.type2: 'type2',
+  BristolScale.type3: 'type3',
+  BristolScale.type4: 'type4',
+  BristolScale.type5: 'type5',
+  BristolScale.type6: 'type6',
+  BristolScale.type7: 'type7',
+};

@@ -1,0 +1,36 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+NotificationEntity _$NotificationEntityFromJson(Map<String, dynamic> json) =>
+    NotificationEntity(
+      user_id: json['user_id'] as String?,
+      notification_id: (json['notification_id'] as num?)?.toInt(),
+      title: json['title'] as String?,
+      body: json['body'] as String?,
+      rrule: json['rrule'] as String?,
+      type: $enumDecodeNullable(_$NotificationTypeEnumMap, json['type']),
+      is_active: json['is_active'] as bool?,
+      local_ids: (json['local_ids'] as List<dynamic>?)
+              ?.map((e) => (e as num).toInt())
+              .toList() ??
+          const [],
+    );
+
+Map<String, dynamic> _$NotificationEntityToJson(NotificationEntity instance) =>
+    <String, dynamic>{
+      if (instance.user_id case final value?) 'user_id': value,
+      if (instance.notification_id case final value?) 'notification_id': value,
+      if (instance.title case final value?) 'title': value,
+      if (instance.body case final value?) 'body': value,
+      if (_$NotificationTypeEnumMap[instance.type] case final value?)
+        'type': value,
+      if (instance.rrule case final value?) 'rrule': value,
+      if (instance.is_active case final value?) 'is_active': value,
+      'local_ids': instance.local_ids,
+    };
+
+const _$NotificationTypeEnumMap = {
+  NotificationType.medication: 'medication',
+  NotificationType.general: 'general',
+};
