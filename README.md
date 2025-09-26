@@ -14,25 +14,21 @@ Provided:
 📂 Project Structure Overview
 
 Core Layer (lib/core/): Contains shared, reusable building blocks used across multiple features.
+📂 core/
 constants/ – app-wide constants (colors, spacing, etc.).
 utils/ – helper functions, formatters, validators, etc.
 theme/ – global styles, typography, and theme definitions.
-widgets/ – common UI components used in multiple features (buttons, inputs, etc.).
-services/ – cross-cutting services (analytics, API client, error reporting, notifications).
-routing/ – app navigation setup (GoRouter, route configs).
 
 Features Layer (lib/features/): Each feature is self-contained with its own domain logic, UI, and state management.
 📂 feature_name/
 - data/ – data sources, repositories, API calls, database queries.
 - models/ – entities/data classes specific to this feature.
-- logic/ – state management (Cubit, Bloc, Riverpod, Provider, etc.).
+- providers/ – state management 
 - view/ – screens, widgets, and UI specific to this feature.
 - widgets/ – feature-specific reusable components
-- feature_name.dart file which will have all exports in this directory. Only add exports if they need to be shared across multiple feature directories
+- feature_name.dart file, which will have all exports in this directory. Only add exports if they need to be shared across multiple feature directories
 
 Each feature should be independently testable and not tightly coupled to other features.
-
-di/ – dependency injection setup (e.g., service locator, providers).
 
 # Custom component library notes
 - Re-use custom component where possible. Ok to refactor. Can make new components
