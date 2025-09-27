@@ -15,9 +15,9 @@ Provided:
 
 Core Layer (lib/core/): Contains shared, reusable building blocks used across multiple features.
 📂 core/
-constants/ – app-wide constants (colors, spacing, etc.).
-utils/ – helper functions, formatters, validators, etc.
-theme/ – global styles, typography, and theme definitions.
+- constants/ – app-wide constants (colors, spacing, etc.).
+- utils/ – helper functions, formatters, validators, etc.
+- theme/ – global styles, typography, and theme definitions.
 
 Features Layer (lib/features/): Each feature is self-contained with its own domain logic, UI, and state management.
 📂 feature_name/
