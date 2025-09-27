@@ -5,6 +5,7 @@ import 'package:toastie/entities/error/error_logs_entity.dart';
 import 'package:toastie/navigation/app_navigation_utils.dart';
 import 'package:toastie/pages/authentication/log_in/email/email.dart';
 import 'package:toastie/pages/authentication/log_in/log_in.dart';
+import 'package:toastie/pages/authentication/log_in/phone_log_in.dart';
 import 'package:toastie/pages/authentication/sign_up/sign_up.dart';
 import 'package:toastie/pages/authentication/start_screen.dart';
 import 'package:toastie/pages/home/home.dart';
@@ -205,6 +206,16 @@ class AppNavigation {
       pageBuilder: (context, state) {
         return getPage(
           child: LogIn(),
+          state: state,
+        );
+      },
+    ),
+    GoRoute(
+      parentNavigatorKey: _rootNavigatorKey,
+      path: phoneLogInPath,
+      pageBuilder: (context, state) {
+        return getPage(
+          child: PhoneLogIn(),
           state: state,
         );
       },

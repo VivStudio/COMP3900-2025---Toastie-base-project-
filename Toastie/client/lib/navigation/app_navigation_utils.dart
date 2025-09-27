@@ -6,6 +6,10 @@ final String startScreenName = 'StartScreen';
 final String logInPath = '/logIn';
 final String logInName = 'LogIn';
 
+// Phone log in
+final String phoneLogInPath = '/phoneLogIn';
+final String phoneLogInName = 'PhoneLogIn';
+
 // Sign up
 final String signUpPath = '/signUp';
 final String signUpName = 'SignUp';
@@ -30,6 +34,7 @@ final String insightsName = 'Insights';
 final List<String> authFlowPaths = [
   startScreenPath,
   logInPath,
+  phoneLogInPath,
   signUpPath,
   emailPath,
 ];

@@ -78,8 +78,7 @@ class _LogInState extends State<LogIn> {
   }
 
   _phoneLogIn(BuildContext context) {
-    Navigator.of(context)
-        .pushReplacement(MaterialPageRoute(builder: (context) => PhoneLogIn()));
+    AppNavigation.router.push(phoneLogInPath);
   }
 
   void _signUpClicked(BuildContext context) {

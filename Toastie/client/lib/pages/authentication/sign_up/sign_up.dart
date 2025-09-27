@@ -78,7 +78,6 @@ class _SignUpState extends State<SignUp> {
   }
 
   _emailSignUp(BuildContext context) {
-    // pushReplacement doesn't work here :(
     Navigator.of(context).pop();
     Navigator.of(context).push(
       MaterialPageRoute(builder: (context) => EmailSignUp()),
@@ -86,8 +85,7 @@ class _SignUpState extends State<SignUp> {
   }
 
   _phoneSignUp(BuildContext context) {
-    Navigator.of(context)
-        .pushReplacement(MaterialPageRoute(builder: (context) => PhoneLogIn()));
+    AppNavigation.router.push(phoneLogInPath);
   }
 
   _logInClicked(BuildContext context) {
