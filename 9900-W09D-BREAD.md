@@ -1,11 +1,11 @@
 # 3900-WO9D-Bread - Magic trackers v2
 
 # Magic trackers v2
-Directory: Toastie/client/lib/features/assistant ---> pretty much all code should go here unless you create a shared component
-Entrypoint on home page: Toastie/client/lib/pages/home/magic_tracker.dart
-Tests: Toastie/client/test/features/assistant (UI and unit tests)
-Colors: Toastie/client/lib/themes/colors.dart
-Text: Toastie/client/lib/themes/text/text.dart
+- Directory: Toastie/client/lib/features/assistant ---> pretty much all code should go here unless you create a shared component
+- Entrypoint on home page: Toastie/client/lib/pages/home/magic_tracker.dart
+- Tests: Toastie/client/test/features/assistant (UI and unit tests)
+- Colors: Toastie/client/lib/themes/colors.dart
+- Text: Toastie/client/lib/themes/text/text.dart
 
 # Supabase 
 Supabase integration: Toastie/client/lib/services/supabase/key.dart
