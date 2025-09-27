@@ -1,7 +1,3 @@
-// Our story
-final String ourStoryPath = '/ourStory';
-final String ourStoryName = 'OurStory';
-
 // Start screen
 final String startScreenPath = '/startScreen';
 final String startScreenName = 'StartScreen';
@@ -32,7 +28,6 @@ final String insightsName = 'Insights';
 
 // Routes in the authentication flow
 final List<String> authFlowPaths = [
-  ourStoryPath,
   startScreenPath,
   logInPath,
   signUpPath,

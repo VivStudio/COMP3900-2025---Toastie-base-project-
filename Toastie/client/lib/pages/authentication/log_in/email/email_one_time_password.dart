@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -10,7 +9,6 @@ import 'package:toastie/components/button/gradient_button.dart';
 import 'package:toastie/components/header/header_title_with_back_button.dart';
 import 'package:toastie/shared/widgets/layout/page_container.dart';
 import 'package:toastie/components/text_field.dart';
-import 'package:toastie/developer_mode.dart';
 import 'package:toastie/pages/authentication/log_in/email/reset_password.dart';
 import 'package:toastie/pages/authentication/authentication_provider/authentication_provider_utils.dart';
 import 'package:toastie/pages/authentication/authentication_provider/google_authentication_provider.dart';
@@ -179,12 +177,10 @@ class _EmailOneTimePasswordState extends State<EmailOneTimePassword> {
                   text: 'Log in',
                   withTopPadding: false,
                 ),
-                if (enableGoogleOAuth && Platform.isIOS)
-                  ToastieDivider(
-                    text: 'OR',
-                  ),
-                if (enableGoogleOAuth && Platform.isIOS)
-                  GoogleAuthenticationProvider(type: AuthenticationType.logIn),
+                ToastieDivider(
+                  text: 'OR',
+                ),
+                GoogleAuthenticationProvider(type: AuthenticationType.logIn),
                 Wrap(
                   crossAxisAlignment: WrapCrossAlignment.center,
                   spacing: gridbaseline,

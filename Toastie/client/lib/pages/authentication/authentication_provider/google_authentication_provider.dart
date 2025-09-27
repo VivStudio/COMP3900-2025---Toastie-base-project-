@@ -17,45 +17,7 @@ class GoogleAuthenticationProvider extends StatelessWidget {
   final AuthenticationType type;
 
   Future<void> _logIn() async {
-    const List<String> scopes = <String>[
-      'email',
-      'profile',
-      'https://www.googleapis.com/auth/contacts.readonly',
-    ];
-
-    // Google sign in on Android will work without providing the Android
-    // Client ID registered on Google Cloud.
-    String oauthClientId = oauthIosClientId;
-    if (kIsWeb) {
-    } else if (Platform.isAndroid) {
-      oauthClientId = oauthWebClientId;
-    } else if (Platform.isIOS || Platform.isMacOS) {
-      oauthClientId = oauthIosClientId;
-    }
-
-    final GoogleSignIn googleSignIn = GoogleSignIn(
-      clientId: oauthClientId,
-      serverClientId: oauthWebClientId,
-      scopes: scopes,
-    );
-
-    final googleUser = await googleSignIn.signIn();
-    final googleAuth = await googleUser!.authentication;
-    final accessToken = googleAuth.accessToken;
-    final idToken = googleAuth.idToken;
-
-    if (accessToken == null) {
-      throw 'No Access Token found.';
-    }
-    if (idToken == null) {
-      throw 'No ID Token found.';
-    }
-
-    await locator<SupabaseClient>().auth.signInWithIdToken(
-          provider: Provider.google,
-          idToken: idToken,
-          accessToken: accessToken,
-        );
+    // TODO: Implement me.
   }
 
   @override

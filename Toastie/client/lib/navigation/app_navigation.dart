@@ -5,7 +5,6 @@ import 'package:toastie/entities/error/error_logs_entity.dart';
 import 'package:toastie/navigation/app_navigation_utils.dart';
 import 'package:toastie/pages/authentication/log_in/email/email.dart';
 import 'package:toastie/pages/authentication/log_in/log_in.dart';
-import 'package:toastie/pages/authentication/our_story.dart';
 import 'package:toastie/pages/authentication/sign_up/sign_up.dart';
 import 'package:toastie/pages/authentication/start_screen.dart';
 import 'package:toastie/pages/home/home.dart';
@@ -66,7 +65,7 @@ class AppNavigation {
         // If the session is null, the user is not authenticated so if the user is not on an auth flow, show the 'our story' page.
         bool isAuthFlow = authFlowPaths.contains(state.matchedLocation);
         if (currentSession == null && !isAuthFlow) {
-          return ourStoryPath;
+          return startScreenPath;
         }
         return null;
       },
@@ -176,16 +175,6 @@ class AppNavigation {
           child: ScaffoldWithNavigationBar(
             navigationShell: navigationShell,
           ),
-          state: state,
-        );
-      },
-    ),
-    GoRoute(
-      parentNavigatorKey: _rootNavigatorKey,
-      path: ourStoryPath,
-      pageBuilder: (context, state) {
-        return getPage(
-          child: OurStory(),
           state: state,
         );
       },

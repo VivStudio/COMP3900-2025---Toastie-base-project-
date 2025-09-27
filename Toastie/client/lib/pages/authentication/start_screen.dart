@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:toastie/components/button/button.dart';
 import 'package:toastie/components/button/gradient_button.dart';
 import 'package:toastie/shared/widgets/layout/page_container.dart';
-import 'package:toastie/developer_mode.dart';
 import 'package:toastie/navigation/app_navigation.dart';
 import 'package:toastie/navigation/app_navigation_utils.dart';
-import 'package:toastie/pages/authentication/log_in/email/email.dart';
-import 'package:toastie/pages/authentication/sign_up/email_sign_up.dart';
 import 'package:toastie/services/services.dart';
 import 'package:toastie/themes/colors.dart';
 import 'package:toastie/themes/gradient_background_colors.dart';
@@ -39,23 +36,10 @@ class StartScreen extends StatelessWidget {
   StartScreen();
 
   void _logInClicked(BuildContext context) {
-    if (enableEmailAuthOnly) {
-      Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => Email()),
-      );
-      return;
-    }
     AppNavigation.router.push(logInPath);
   }
 
   void _signUpClicked(BuildContext context) {
-    // pushReplacement doesn't work here :(
-    if (enableEmailAuthOnly) {
-      Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => EmailSignUp()),
-      );
-      return;
-    }
     AppNavigation.router.push(signUpPath);
   }
 

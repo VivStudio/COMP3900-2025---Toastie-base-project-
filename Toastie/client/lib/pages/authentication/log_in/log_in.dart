@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:supabase_auth_ui/supabase_auth_ui.dart';
 import 'package:toastie/components/button/text_button.dart';
 import 'package:toastie/components/header/header_title_with_back_button.dart';
+import 'package:toastie/pages/authentication/authentication_provider/apple_authentication_provider.dart';
+import 'package:toastie/pages/authentication/log_in/phone_log_in.dart';
 import 'package:toastie/shared/widgets/layout/page_container.dart';
 import 'package:toastie/developer_mode.dart';
 import 'package:toastie/navigation/app_navigation.dart';
@@ -75,11 +77,10 @@ class _LogInState extends State<LogIn> {
     AppNavigation.router.push(emailPath);
   }
 
-  // TODO(TOAS-123): Add phone login.
-  // _phoneLogIn(BuildContext context) {
-  //   Navigator.of(context)
-  //       .pushReplacement(MaterialPageRoute(builder: (context) => PhoneLogIn()));
-  // }
+  _phoneLogIn(BuildContext context) {
+    Navigator.of(context)
+        .pushReplacement(MaterialPageRoute(builder: (context) => PhoneLogIn()));
+  }
 
   void _signUpClicked(BuildContext context) {
     AppNavigation.router.push(signUpPath);
@@ -106,21 +107,18 @@ class _LogInState extends State<LogIn> {
           Wrap(
             runSpacing: gridbaseline * 2,
             children: [
-              if (Platform.isIOS && enableGoogleOAuth)
-                GoogleAuthenticationProvider(type: AuthenticationType.logIn),
-              // if (enableAppleOAuth)
-              //   AppleAuthenticationProvider(type: AuthenticationType.logIn),
+              GoogleAuthenticationProvider(type: AuthenticationType.logIn),
+              AppleAuthenticationProvider(type: AuthenticationType.logIn),
               AuthenticationButton(
                 providerImage: Icon(Icons.email_outlined),
                 text: 'Continue with Email',
                 actionHandler: () => _emailLogIn(context),
               ),
-              // TODO(TOAS-123): Add phone login.
-              // AuthenticationButton(
-              //   providerImage: Icon(Icons.phone_outlined),
-              //   text: 'Continue with phone',
-              //   actionHandler: () => _phoneLogIn(context),
-              // ),
+              AuthenticationButton(
+                providerImage: Icon(Icons.phone_outlined),
+                text: 'Continue with phone',
+                actionHandler: () => _phoneLogIn(context),
+              ),
             ],
           ),
           SizedBox(height: gridbaseline * 4),

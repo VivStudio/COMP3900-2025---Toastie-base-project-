@@ -116,7 +116,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   void _deleteAccountClicked(BuildContext context) async {
     await _clearAppStateForUser(deleteUser: true);
-    AppNavigation.router.go(ourStoryPath);
+    AppNavigation.router.go(startScreenPath);
   }
 
   void _showDeleteAccountDialog(BuildContext context) {

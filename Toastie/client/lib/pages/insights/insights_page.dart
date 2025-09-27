@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toastie/components/header/header_title.dart';
 import 'package:toastie/shared/widgets/layout/page_container.dart';
 import 'package:toastie/navigation/app_navigation.dart';
 import 'package:toastie/services/services.dart';
@@ -37,7 +38,12 @@ class InsightsPage extends StatelessWidget {
     return PageContainer(
       childInFactionallySizedBox: SingleChildScrollView(
         child: Column(
-          children: [Text('TODO: 3900-F09B-BANANA Implement GP Summary')],
+          children: [
+            HeaderTitle(
+              title: 'Insights',
+            ),
+            Text('TODO: 3900-F09B-BANANA Implement Doctor Summary'),
+          ],
         ),
       ),
     );
