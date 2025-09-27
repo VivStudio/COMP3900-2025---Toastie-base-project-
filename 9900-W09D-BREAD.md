@@ -2,7 +2,7 @@
 
 # Magic trackers v2
 Directory: Toastie/client/lib/features/assistant ---> pretty much all code should go here unless you create a shared component
-Entrypoint on home page: Toastie/client/lib/pages/insights/insights_page.dart
+Entrypoint on home page: Toastie/client/lib/pages/home/magic_tracker.dart
 Tests: Toastie/client/test/features/assistant (UI and unit tests)
 Colors: Toastie/client/lib/themes/colors.dart
 Text: Toastie/client/lib/themes/text/text.dart
@@ -18,6 +18,13 @@ Client: Uploading photos - no business logic
 - Toastie/client/lib/clients
 Service: Business logic & call repositories, clients, other services etc.
 - Toastie/client/lib/services
+
+# Main
+Toastie/client/lib/main.dart
+
+# Gallery
+See how the existing card components and how to use them.
+Toastie/client/lib/gallery.dart
 
 # Developer options
 If you don't want to re-authenticate everytime you use the app, you can do this:

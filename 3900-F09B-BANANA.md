@@ -23,6 +23,13 @@ Client: Uploading photos - no business logic
 Service: Business logic & call repositories, clients, other services etc.
 - Toastie/client/lib/services
 
+# Main
+Toastie/client/lib/main.dart
+
+# Gallery
+See how the existing card components and how to use them.
+Toastie/client/lib/gallery.dart
+
 # Developer options
 If you don't want to re-authenticate everytime you use the app, you can do this:
 - runActualApp: false

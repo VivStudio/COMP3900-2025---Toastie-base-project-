@@ -113,17 +113,11 @@ class _HomeState extends State<Home> {
   }
 
   void _profileClicked({required BuildContext context}) {
-    showSettingsModal(context: context)
-        .then(
-          (value) => {
-            _fetchName(),
-          },
-        )
-        .then(
-          (value) => {
-            _fetchName(),
-          },
-        );
+    showSettingsModal(context: context).then(
+      (value) => {
+        _fetchName(),
+      },
+    );
   }
 
   void _navigateToSummaryClicked(BuildContext context) {
