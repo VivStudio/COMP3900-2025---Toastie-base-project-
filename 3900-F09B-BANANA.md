@@ -1,15 +1,15 @@
 # 3900-F09B-BANANA - Doctor summary & OAuth
 
 # OAuth
-Apple: Toastie/client/lib/pages/authentication/authentication_provider/apple_authentication_provider.dart
-Google: Toastie/client/lib/pages/authentication/authentication_provider/google_authentication_provider.dart
+- Apple: Toastie/client/lib/pages/authentication/authentication_provider/apple_authentication_provider.dart
+- Google: Toastie/client/lib/pages/authentication/authentication_provider/google_authentication_provider.dart
 
 # Doctor summary
-Directory: Toastie/client/lib/features/doctor_summary ---> pretty much all code should go here unless you create a shared component
-Entrypoint on insights page: Toastie/client/lib/pages/insights/insights_page.dart
-Tests: Toastie/client/test/features/doctor_summary (UI and unit tests)
-Colors: Toastie/client/lib/themes/colors.dart
-Text: Toastie/client/lib/themes/text/text.dart
+- Directory: Toastie/client/lib/features/doctor_summary ---> pretty much all code should go here unless you create a shared component
+- Entrypoint on insights page: Toastie/client/lib/pages/insights/insights_page.dart
+- Tests: Toastie/client/test/features/doctor_summary (UI and unit tests)
+- Colors: Toastie/client/lib/themes/colors.dart
+- Text: Toastie/client/lib/themes/text/text.dart
 
 # Supabase 
 Supabase integration: Toastie/client/lib/services/supabase/key.dart
