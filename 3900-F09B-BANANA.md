@@ -16,10 +16,13 @@ Supabase integration: Toastie/client/lib/services/supabase/key.dart
 
 Entity: Database structure
 - Toastie/client/lib/entities
+
 Repository: Database communication (read, write) - no business logic
 - Toastie/client/lib/repositories
+  
 Client: Uploading photos - no business logic
 - Toastie/client/lib/clients
+
 Service: Business logic & call repositories, clients, other services etc.
 - Toastie/client/lib/services
 
